@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Muli", sans-serif;
+  background-color: #8e44ad;
+  color: #fff;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 30px 50px;
+}
+
+.counter {
+  font-size: 60px;
+  margin-top: 10px;
+}
+
+@media (max-width: 580px) {
+  body {
+    flex-direction: column;
+  }
+}
