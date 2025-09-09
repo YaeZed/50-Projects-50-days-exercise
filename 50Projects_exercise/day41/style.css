@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css?family=Muli:300,700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Muli", sans-serif;
+  background-color: #fbdcfe;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  background-color: #fff;
+  border: 3px #000 solid;
+  border-radius: 10px;
+  padding: 30px;
+  max-width: 1000px;
+  text-align: center;
+  box-shadow: 0 10px 10px rgba(140, 12, 140, 0.1);
+}
+
+.code-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.code {
+  caret-color: transparent;
+  font-size: 75px;
+  height: 120px;
+  width: 100px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  margin: 1%;
+  text-align: center;
+  font-weight: 300;
+  -moz-appearance: textfield; /*消除firefox的默认样式*/
+}
+
+/* 消除chrome和safari的默认样式 */
+.code::-webkit-outer-spin-button,
+.code::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.code:valid {
+  border-color: #3498db;
+  /* x,y, 模糊度，扩散距离，颜色 */
+  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.25);
+}
+
+.info {
+  background-color: #eaeaea;
+  display: inline-block;
+  padding: 10px;
+  line-height: 10px;
+  max-width: 400px;
+  color: #777;
+  border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+  .code-container {
+    flex-wrap: wrap;
+  }
+
+  .code {
+    font-size: 60px;
+    height: 80px;
+    max-width: 70px;
+  }
+}
